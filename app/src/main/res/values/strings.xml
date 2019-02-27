@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BookRyde</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="login_with">login with</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="signup"><u>SIGNUP</u></string>
+    <string name="no_internet">Please check your internet connection and try again</string>
+    <string name="please_enter_email">Please enter email address</string>
+    <string name="email_patren">Please enter valid email address</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="password_validation">Password length should be 8 character</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="colon">:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_country">Select Country</string>
+    <string name="address">Address</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+</resources>

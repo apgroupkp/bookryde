@@ -64,4 +64,9 @@
         reproduced in their exact original form, accompanied by English versions from the 1914 translation by H.
         Rackham.
     </string>
+    <string name="are_you_sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="ok">ok</string>
+    <string name="booking_history">Booking History</string>
 </resources>

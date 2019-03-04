@@ -7,4 +7,6 @@
     <color name="colorRed">#FF0000</color>
     <color name="slide_menu_bar">#181818</color>
     <color name="backgroundColorReferFriend">#e4e5d7</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

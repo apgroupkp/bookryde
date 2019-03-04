@@ -10,6 +10,7 @@ enum class DrawerEnum(var title: Int) :Serializable{
     Notifications(R.string.notification),
     Setting(R.string.setting),
     Support(R.string.support),
+    BookingHistrory(R.string.booking_history),
     ReferAFriend(R.string.Refer_a_friend),
     AboutApp(R.string.about_app),
     ContactUs(R.string.contactus),

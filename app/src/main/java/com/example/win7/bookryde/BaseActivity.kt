@@ -19,6 +19,7 @@ import com.example.win7.bookryde.Drawer.ReferAFriendActivity
 import com.example.win7.bookryde.Drawer.SettingActivity
 import com.example.win7.bookryde.Drawer.TermsConditionActivity
 import com.example.win7.bookryde.DrawerEum.DrawerEnum
+import com.example.win7.bookryde.Interface.OnConfirmation
 import com.example.win7.bookryde.Model.DrawerItem
 import com.example.win7.bookryde.Notification.NotificationListActivity
 import com.example.win7.bookryde.User.LoginActivity
@@ -171,6 +172,11 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
         drawerItemArrayList.add(item)
 
         item = DrawerItem()
+        item.drawerEnum = DrawerEnum.BookingHistrory
+        item.itemName=getString(R.string.booking_history)
+        item.itemImage=getDrawable(R.drawable.ic_support)
+        drawerItemArrayList.add(item)
+        item = DrawerItem()
         item.drawerEnum = DrawerEnum.ReferAFriend
         item.itemName=getString(R.string.Refer_a_friend)
         item.itemImage=getDrawable(R.drawable.ic_share_black)
@@ -257,6 +263,10 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
                         //startActivity(Intent(me, AboutAppActivity::class.java))
                         closeDrawer()
                     }
+                    DrawerEnum.BookingHistrory -> {
+                        //startActivity(Intent(me, AboutAppActivity::class.java))
+                        closeDrawer()
+                    }
                     DrawerEnum.ReferAFriend -> {
                         startActivity(Intent(me, ReferAFriendActivity::class.java))
                         closeDrawer()
@@ -275,7 +285,20 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
                         closeDrawer()
                     }
                     DrawerEnum.Logout -> {
-                        closeDrawer()
+                        showConfirmationDialog(getString(R.string.are_you_sure_want_to_logout), object :
+                            OnConfirmation {
+                            override fun onYes() {
+                               // logOut()
+                                closeDrawer()
+                            }
+
+                            override fun onNo() {
+                                closeDrawer()
+                            }
+
+                        })
+
+
                     }
                     else -> {
                     }

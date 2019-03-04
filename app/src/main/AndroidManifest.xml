@@ -45,6 +45,8 @@
         </activity>
         <activity android:name=".Drawer.TermsConditionActivity">
         </activity>
+        <activity android:name=".Drawer.BookingList.BookingListActivity">
+        </activity>
     </application>
 
 </manifest>

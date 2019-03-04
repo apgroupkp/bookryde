@@ -8,7 +8,6 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
-import com.example.win7.bookryde.R.styleable.Snackbar
 
 abstract class AbstactBaseActivity : AppCompatActivity(){
     companion object {
@@ -25,6 +24,7 @@ abstract class AbstactBaseActivity : AppCompatActivity(){
         }
     }
     fun showSnackBar(context: Context, msg: String) {
+
         val snackbar = android.support.design.widget.Snackbar.make(window.decorView.rootView.findViewById(R.id.frmContainer), msg, android.support.design.widget.Snackbar.LENGTH_LONG)
         val tv = snackbar.view.findViewById<TextView>(android.support.design.R.id.snackbar_text)
         tv.setTextColor(ContextCompat.getColor(context, R.color.colorWhite))

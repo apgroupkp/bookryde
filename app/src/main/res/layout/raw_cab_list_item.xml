@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/small_background">
+        <ImageView android:layout_width="@dimen/_120sdp"
+                   android:id="@+id/img_cab_item"
+                   tools:src="@drawable/cab1"
+                   android:layout_gravity="center_vertical|center_horizontal"
+                   android:layout_height="@dimen/_60sdp"/>
+        <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:id="@+id/txtCabName"
+                tools:text="CAB"
+                android:textAllCaps="true"
+                android:padding="2dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/background_button"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

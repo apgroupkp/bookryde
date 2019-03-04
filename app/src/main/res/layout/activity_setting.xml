@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Drawer.SettingActivity">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:padding="20dp"
+                        android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:id="@+id/lil_chnge_pw"
+                          android:layout_margin="20dp"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content"
+                          android:weightSum="1">
+                <TextView android:layout_width="0dp"
+                          android:textColor="@color/colorPrimaryDark"
+                          android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                          android:text="@string/change_password"
+                          android:layout_weight="0.8"
+                          android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="0dp"
+                           android:layout_weight="0.2"
+                           android:src="@drawable/ic_right_arrow"
+                           android:layout_height="28dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:id="@+id/lil_emergency_contact"
+                          android:layout_below="@+id/lil_chnge_pw"
+                          android:orientation="horizontal"
+                          android:layout_margin="20dp"
+                          android:layout_height="wrap_content"
+                          android:weightSum="1">
+                <TextView android:layout_width="0dp"
+                          android:textColor="@color/colorPrimaryDark"
+                          android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                          android:text="@string/emaergency_contact"
+                          android:layout_weight="0.8"
+                          android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="0dp"
+                           android:layout_weight="0.2"
+                           android:src="@drawable/ic_right_arrow"
+                           android:layout_height="28dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

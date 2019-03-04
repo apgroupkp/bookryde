@@ -2,8 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -15,39 +13,40 @@
                         android:layout_marginTop="20dp"
                         android:layout_height="@dimen/_420sdp"
             >-->
-            <!--   <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content">
 
-                   <de.hdodenhof.circleimageview.CircleImageView
-                           android:id="@+id/img_user"
-                           android:layout_width="@dimen/_50sdp"
-                           android:layout_height="@dimen/_50sdp"
-                           android:layout_centerHorizontal="true"
-                           android:layout_marginStart="8dp"
-                           android:background="@drawable/camera_background" />
-                   <ImageView
-                           android:id="@+id/img_add_profile"
-                           android:layout_width="30dp"
-                           android:layout_height="30dp"
-                           android:layout_alignParentEnd="true"
-                           android:layout_marginBottom="20dp"
-                           android:src="@drawable/ic_camera"
-                           android:visibility="visible" />
-               </RelativeLayout>
-   -->
 
-            <FrameLayout
+            <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_420sdp"
                     android:padding="10dp"
                     android:orientation="vertical"
                     android:gravity="center_vertical"
-                    android:background="@drawable/ic_background">
+                  >
 
+               <!-- <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
 
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/camera_background" />
+                    <ImageView
+                            android:id="@+id/img_add_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_camera"
+                            android:visibility="visible" />
+                </RelativeLayout>-->
                 <LinearLayout android:layout_width="match_parent"
-                              android:orientation="vertical" android:layout_height="wrap_content">
+                              android:background="@drawable/ic_background"
+                              android:orientation="vertical"
+                              android:layout_height="wrap_content">
 
                     <RelativeLayout android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
@@ -116,6 +115,7 @@
                                     android:orientation="horizontal" android:layout_height="wrap_content">
                             <RadioButton android:layout_width="20dp"
                                          android:layout_marginStart="14dp"
+                                         android:padding="2dp"
                                          android:layout_weight="0.5"
                                          android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                          android:text="@string/male"
@@ -125,6 +125,7 @@
                             <RadioButton android:layout_width="20dp"
                                          android:layout_weight="0.5"
                                          android:text="@string/female"
+                                         android:padding="2dp"
                                          android:gravity="center_vertical"
                                          android:button="@drawable/gender_selection"
                                          android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -205,10 +206,12 @@
                     <View style="@style/viewstyle"/>
                     <TextView
                             android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
                             android:text="@string/register"
                             style="@style/buttonstyle"/>
                 </LinearLayout>
-            </FrameLayout>
+            </RelativeLayout>
           <!--  </ScrollView>-->
         </LinearLayout>
 

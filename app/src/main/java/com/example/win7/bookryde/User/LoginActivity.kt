@@ -26,16 +26,22 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         setFullScreen()
         binding.btnLogin.setOnClickListener(this)
         binding.txtSignUp.setOnClickListener(this)
+        binding.txxForgotPassword.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v?.id) {
             R.id.btnLogin -> {
+                Utils.hideSoftKeyboard(me)
                 if(isValid()) {
                 }
             }
             R.id.txtSignUp->{
                 val intent = Intent(this, RegisterActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.txxForgotPassword->{
+                val intent = Intent(this, ForgotPasswordActivity::class.java)
                 startActivity(intent)
             }
             else -> {

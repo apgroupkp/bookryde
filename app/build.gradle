@@ -10,6 +10,7 @@ android {
         applicationId "com.example.win7.bookryde"
         minSdkVersion 22
         targetSdkVersion 28
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

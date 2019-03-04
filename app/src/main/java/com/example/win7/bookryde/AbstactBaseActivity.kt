@@ -10,7 +10,7 @@ import android.view.View
 import android.widget.TextView
 import com.example.win7.bookryde.R.styleable.Snackbar
 
-abstract class AbstactBaseActivity:AppCompatActivity(){
+abstract class AbstactBaseActivity : AppCompatActivity(){
     companion object {
         var dialog: Dialog? = null
     }

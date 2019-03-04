@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools"
+         xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Drawer.ReferAFriendActivity">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:background="@color/backgroundColorReferFriend"
+                        android:layout_height="@dimen/_160sdp">
+            <TextView android:layout_width="match_parent"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:padding="20dp"
+                      android:gravity="center"
+                      android:id="@+id/txt_refer_text"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_height="wrap_content"
+                      android:text="@string/refer_afirend_text"/>
+            <ImageView android:layout_width="85dp"
+                       android:src="@drawable/user_refer_frend"
+                       android:layout_centerHorizontal="true"
+                       android:layout_below="@+id/txt_refer_text" android:layout_height="85dp"/>
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:padding="4dp"
+                  android:text="@string/share_invite_code"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                  android:layout_gravity="center"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="100dp"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="i14Hv"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                  android:layout_gravity="center"
+                  android:padding="8dp"
+                  android:background="@drawable/txt_background"
+                  android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent"
+                       android:padding="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_28sdp"
+                       android:layout_height="@dimen/_28sdp"
+                       android:src="@drawable/ic_facebook_refer"
+                       android:id="@+id/imgFacebook"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="4dp"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_toEndOf="@+id/imgFacebook"
+                      android:text="@string/share_via_facebook"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_28sdp"
+                       android:layout_height="@dimen/_28sdp"
+                       android:src="@drawable/ic_twitter"
+                       android:id="@+id/imgTwitter"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="4dp"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_toEndOf="@+id/imgTwitter"
+                      android:text="@string/share_via_twitter"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_28sdp"
+                       android:src="@drawable/ic_gmail_refer"
+                       android:layout_height="@dimen/_28sdp"
+                       android:padding="2dp"
+                       android:id="@+id/imgEmail"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="4dp"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_toEndOf="@+id/imgEmail"
+                      android:text="@string/share_via_email"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:padding="8dp"
+                        android:layout_marginEnd="@dimen/_20sdp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_28sdp"
+                       android:layout_height="@dimen/_28sdp"
+                       android:padding="4dp"
+                       android:src="@drawable/ic_message"
+                       android:id="@+id/imgMessage"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="4dp"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_toEndOf="@+id/imgMessage"
+                      android:text="@string/share_via_message"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_28sdp"
+                       android:layout_height="@dimen/_28sdp"
+                       android:src="@drawable/ic_whatsapp"
+                       android:id="@+id/imgWhatsapp"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_marginStart="4dp"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                      android:layout_toEndOf="@+id/imgWhatsapp"
+                      android:text="@string/share_via_whatsapp"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -5,4 +5,6 @@
     <color name="colorAccent">#282828</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorRed">#FF0000</color>
+    <color name="slide_menu_bar">#181818</color>
+    <color name="backgroundColorReferFriend">#e4e5d7</color>
 </resources>

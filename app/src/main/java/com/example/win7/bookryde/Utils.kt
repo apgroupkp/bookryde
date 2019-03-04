@@ -1,8 +1,13 @@
 package com.example.win7.bookryde
 
+import android.app.Activity
 import android.content.Context
+import android.content.pm.PackageManager
 import android.net.ConnectivityManager
+import android.preference.PreferenceManager
+import android.support.v4.content.ContextCompat
 import android.util.Log
+import android.view.inputmethod.InputMethodManager
 
 open class Utils {
     companion object {
@@ -28,6 +33,25 @@ open class Utils {
             if (Companion.ENABLE_LOG) {
                 Log.e(tag, msg)
             }
+        }
+        fun hideSoftKeyboard(me: Activity) {
+            if (me.currentFocus != null) {
+                val inputMethodManager = me.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                inputMethodManager.hideSoftInputFromWindow(me.currentFocus!!.windowToken, 0)
+            }
+        }
+
+        fun getGCMToken(mContext: Context): String {
+            val prefs = PreferenceManager.getDefaultSharedPreferences(mContext)
+            return prefs.getString("GCMToken", "")
+        }
+
+        fun setGCMToken(GCMToken: String) {
+            val prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getInstance())
+            prefs.edit().putString("GCMToken", GCMToken).apply()
+        }
+        fun checkPermission(mContext: Context, permission: String): Boolean {
+            return ContextCompat.checkSelfPermission(mContext, permission) == PackageManager.PERMISSION_GRANTED
         }
     }
 

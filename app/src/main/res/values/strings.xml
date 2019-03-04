@@ -7,7 +7,9 @@
     <string name="or">OR</string>
     <string name="login_with">login with</string>
     <string name="dont_have_account">Don\'t have account?</string>
-    <string name="signup"><u>SIGNUP</u></string>
+    <string name="signup">
+        <u>SIGNUP</u>
+    </string>
     <string name="no_internet">Please check your internet connection and try again</string>
     <string name="please_enter_email">Please enter email address</string>
     <string name="email_patren">Please enter valid email address</string>
@@ -24,4 +26,42 @@
     <string name="mobile_no">Mobile No.</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="type_your_email">Type your email</string>
+    <string name="send">send</string>
+    <string name="please_enter_email_for_reset_password">Please enter email address for reset password:</string>
+    <string name="book_ride">Book ride</string>
+    <string name="share_ride">Share ride</string>
+    <string name="cab_booking">CAB BOOKING</string>
+    <string name="home">Home</string>
+    <string name="payment">Payment</string>
+    <string name="wallet">Wallet</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
+    <string name="support">Support</string>
+    <string name="Refer_a_friend">Refer a friend</string>
+    <string name="logout">Logout</string>
+    <string name="contactus">Contact Us</string>
+    <string name="about_app">About App</string>
+    <string name="terms_and_condition">Terms And Condition</string>
+    <string name="ride_later">Ride Later</string>
+    <string name="change_password">Change Password</string>
+    <string name="emaergency_contact">Emergency Contact</string>
+    <string name="refer_afirend_text">Invite your friend by sharing invite code and referral amount</string>
+    <string name="share_invite_code">Share your Invite code</string>
+    <string name="share_via_facebook">Share Via Facebook</string>
+    <string name="share_via_twitter">Share Via Twitter</string>
+    <string name="share_via_email">Share Via Email</string>
+    <string name="share_via_message">Share Via Message</string>
+    <string name="share_via_whatsapp">Share Via Whatsapp</string>
+    <string name="refer_a_friend">Refer A Friend</string>
+    <string name="lorap_lipsm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum .10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+        reproduced in their exact original form, accompanied by English versions from the 1914 translation by H.
+        Rackham.
+    </string>
 </resources>

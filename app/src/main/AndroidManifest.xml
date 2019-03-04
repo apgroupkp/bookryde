@@ -3,6 +3,7 @@
           package="com.example.win7.bookryde">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:allowBackup="true"
@@ -27,6 +28,22 @@
         <activity android:name=".NoInternetActivity">
         </activity>
         <activity android:name=".User.RegisterActivity">
+        </activity>
+        <activity android:name=".User.ForgotPasswordActivity">
+        </activity>
+        <activity android:name=".BookRide.BookRideActivity">
+        </activity>
+        <activity android:name=".Notification.NotificationListActivity">
+        </activity>
+        <activity android:name=".Drawer.SettingActivity">
+        </activity>
+        <activity android:name=".Drawer.ReferAFriendActivity">
+        </activity>
+        <activity android:name=".Drawer.WalletActivity">
+        </activity>
+        <activity android:name=".Drawer.AboutAppActivity">
+        </activity>
+        <activity android:name=".Drawer.TermsConditionActivity">
         </activity>
     </application>
 

@@ -7,12 +7,10 @@
     <string name="or">OR</string>
     <string name="login_with">login with</string>
     <string name="dont_have_account">Don\'t have account?</string>
-    <string name="signup">
-        <u>SIGNUP</u>
-    </string>
+    <string name="signup"><u>SIGNUP</u></string>
     <string name="no_internet">Please check your internet connection and try again</string>
     <string name="please_enter_email">Please enter email address</string>
-    <string name="email_patren">Please enter valid email address</string>
+    <string name="email_pattren">Please enter valid email address</string>
     <string name="please_enter_password">Please enter password</string>
     <string name="password_validation">Password length should be 8 character</string>
     <string name="first_name">First Name</string>
@@ -55,6 +53,20 @@
     <string name="share_via_message">Share Via Message</string>
     <string name="share_via_whatsapp">Share Via Whatsapp</string>
     <string name="refer_a_friend">Refer A Friend</string>
+    <string name="email_validation">Please enter Email Address</string>
+    <string name="name_length_validation">Full Name length should be minimum 3</string>
+    <string name="register_username_length">Username length should be minimum 3</string>
+    <string name="new_password_validation">Password length should be minimum 8</string>
+    <string name="comfirm_password_validation">Please enter Confirm Password</string>
+    <string name="comfirm_password_length">Confirm Password length should be minimum 8</string>
+    <string name="confirm_password_same_as_password">Confirm Password should be same as password</string>
+    <string name ="mobile_no_digit">mobile no  should be 10 digit </string>
+    <string name="camera_permission_error">Please allow permission to access camera</string>
+    <string name="gallery_permission_error">Please allow permission to access gallery</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel"> cancel </string>
+
     <string name="lorap_lipsm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
         has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type
         and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into

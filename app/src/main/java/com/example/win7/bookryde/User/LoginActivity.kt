@@ -1,9 +1,7 @@
 package com.example.win7.bookryde.User
 
 import android.content.Intent
-import android.opengl.ETC1.isValid
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.win7.bookryde.BaseActivity
 import com.example.win7.bookryde.Interface.OnDialog
@@ -11,7 +9,6 @@ import com.example.win7.bookryde.MainActivity
 import com.example.win7.bookryde.R
 import com.example.win7.bookryde.Utils
 import com.example.win7.bookryde.databinding.ActivityLoginBinding
-import com.example.win7.bookryde.databinding.ActivityNoInternetBinding
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
 
@@ -59,7 +56,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
             })
             return  false
         } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(binding.edtEmail.text.toString()).matches()) {
-            showSimpleDialog(getString(R.string.email_patren),object :OnDialog{
+            showSimpleDialog(getString(R.string.email_pattren),object :OnDialog{
                 override fun onOk() {
                 }
             })

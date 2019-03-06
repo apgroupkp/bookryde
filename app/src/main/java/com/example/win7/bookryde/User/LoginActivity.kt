@@ -11,7 +11,6 @@ import com.example.win7.bookryde.Utils
 import com.example.win7.bookryde.databinding.ActivityLoginBinding
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
-
     lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

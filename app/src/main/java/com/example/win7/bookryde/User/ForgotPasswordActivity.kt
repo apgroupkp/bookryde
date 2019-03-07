@@ -32,7 +32,7 @@ lateinit var binding:ActivityForgotPasswordBinding
                 } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(binding.edtEmail.text.toString()).matches()) {
                     showSnackBar(me, getString(R.string.email_pattren))
                 }else{
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, ResetPasswordActivity::class.java)
                     startActivity(intent)
                 }
             }

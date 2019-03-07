@@ -15,6 +15,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import com.example.win7.bookryde.Drawer.AboutAppActivity
+import com.example.win7.bookryde.Drawer.BookingList.BookingListActivity
 import com.example.win7.bookryde.Drawer.ReferAFriendActivity
 import com.example.win7.bookryde.Drawer.SettingActivity
 import com.example.win7.bookryde.Drawer.TermsConditionActivity
@@ -174,7 +175,7 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
         item = DrawerItem()
         item.drawerEnum = DrawerEnum.BookingHistrory
         item.itemName=getString(R.string.booking_history)
-        item.itemImage=getDrawable(R.drawable.ic_support)
+        item.itemImage=getDrawable(R.drawable.history)
         drawerItemArrayList.add(item)
         item = DrawerItem()
         item.drawerEnum = DrawerEnum.ReferAFriend
@@ -186,12 +187,6 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
         item.drawerEnum = DrawerEnum.AboutApp
         item.itemName=getString(R.string.about_app)
         item.itemImage=getDrawable(R.drawable.ic_aboutapp)
-        drawerItemArrayList.add(item)
-
-        item = DrawerItem()
-        item.drawerEnum = DrawerEnum.ContactUs
-        item.itemName=getString(R.string.contactus)
-        item.itemImage=getDrawable(R.drawable.ic_contactus)
         drawerItemArrayList.add(item)
 
         item = DrawerItem()
@@ -264,7 +259,7 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
                         closeDrawer()
                     }
                     DrawerEnum.BookingHistrory -> {
-                        //startActivity(Intent(me, AboutAppActivity::class.java))
+                        startActivity(Intent(me, BookingListActivity::class.java))
                         closeDrawer()
                     }
                     DrawerEnum.ReferAFriend -> {
@@ -276,9 +271,6 @@ open class BaseActivity : AbstactBaseActivity(), View.OnClickListener, DrawerLay
                         closeDrawer()
                     }
 
-                    DrawerEnum.ContactUs -> {
-                        closeDrawer()
-                    }
                     DrawerEnum.TermsAndCondition -> {
                         startActivity(Intent(me, TermsConditionActivity::class.java))
                        // Utils.makeCall(me, Utils.getContactNo(me))

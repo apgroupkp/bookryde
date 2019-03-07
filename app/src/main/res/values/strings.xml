@@ -5,11 +5,10 @@
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="or">OR</string>
+    <string name="google_maps_key">AIzaSyAyLVyt4GVRC9n_tIsbIfurzjE1oSqTapg</string>
     <string name="login_with">login with</string>
     <string name="dont_have_account">Don\'t have account?</string>
-    <string name="signup">
-        <u>SIGNUP</u>
-    </string>
+    <string name="signup"><u>SIGNUP</u></string>
     <string name="no_internet">Please check your internet connection and try again</string>
     <string name="please_enter_email">Please enter email address</string>
     <string name="email_pattren">Please enter valid email address</string>
@@ -69,6 +68,7 @@
     <string name="take_photo">Take Photo</string>
     <string name="choose_from_gallery">Choose from Gallery</string>
     <string name="cancel">cancel</string>
+    <string name="cancel">cancel</string>
     <string name="Receive">DO Not Receive </string>
     <string name="Phone_Verification">Phone Verification</string>
     <string name="Enter_your_otp">Enter Your OTP here</string>
@@ -91,4 +91,21 @@
     <string name="yes">Yes</string>
     <string name="ok">ok</string>
     <string name="booking_history">Booking History</string>
+    <string name="booking_id">Booking Id</string>
+    <string name="ride_now">Ride Now</string>
+    <string name="your_loaction">Your Location</string>
+    <string name="book_now">Book Now</string>
+    <string name="reset_your_password">Reset Your Password?</string>
+    <string name="please_enter_new_password">Please enter new Password :</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="please_enter_firstname">Please enter first name</string>
+    <string name="firstname_validation">First name length should be character</string>
+    <string name="plaese_enter_last_name">Please enter last name</string>
+    <string name="plaese_enter_confirm_password">Please enter confirm password</string>
+    <string name="confirm_password_validation">Confirm Password length should be 8 character</string>
+    <string name="change_your_password">Change your Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="please_enter_old_password">Please enter old password</string>
 </resources>

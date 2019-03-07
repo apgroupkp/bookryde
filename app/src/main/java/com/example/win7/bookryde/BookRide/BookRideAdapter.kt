@@ -12,7 +12,6 @@ import com.example.win7.bookryde.databinding.RawCabListItemBinding
 class BookRideAdapter(private var mContext: Context, private var vehicleList: MutableList<VehicleData>) : RecyclerView.Adapter<BookRideAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-
         val binding = RawCabListItemBinding.inflate(LayoutInflater.from(mContext))
         return ViewHolder(binding)
     }

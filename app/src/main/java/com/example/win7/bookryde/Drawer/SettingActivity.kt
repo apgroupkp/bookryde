@@ -1,16 +1,13 @@
 package com.example.win7.bookryde.Drawer
 
-import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.win7.bookryde.BaseActivity
-import com.example.win7.bookryde.MainActivity
 import com.example.win7.bookryde.R
 import com.example.win7.bookryde.databinding.ActivitySettingBinding
 
 class SettingActivity : BaseActivity() , View.OnClickListener{
-lateinit var binding:ActivitySettingBinding
+lateinit var binding : ActivitySettingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingBinding.inflate(layoutInflater, baseBinding.frmContainer, true)

@@ -7,236 +7,230 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:focusableInTouchMode="true"
-            android:layout_gravity="center_vertical"
             style="@style/scrollViewStyle"
-            android:gravity="center_vertical"
-            tools:context=".User.LoginActivity">
-<FrameLayout android:layout_width="match_parent"
-             android:layout_gravity="center_vertical"
-             android:gravity="center_vertical"
-             android:layout_height="wrap_content">
-    <RelativeLayout android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/_20sdp" android:layout_height="wrap_content">
-        <ImageView android:layout_width="@dimen/_60sdp"
-                   android:layout_height="@dimen/_40sdp"
-                   android:layout_centerInParent="true"
-        android:src="@drawable/camera_background"/>
-        <ImageView android:layout_width="20dp"
-                   android:src="@drawable/ic_camera" android:layout_height="20dp"
-        android:id="@+id/imgCamera"
-        android:layout_centerInParent="true"/>
-    </RelativeLayout>
-    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart=
-                        "@dimen/_20sdp"
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_40sdp"
-                android:layout_gravity="center_vertical"
-                android:gravity="center_vertical"
-                android:orientation="vertical"
-                tools:context=".User.RegisterActivity"
-        >
+            tools:context=".User.LoginActivity"
+            android:gravity="center_vertical">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="match_parent">
 
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_55sdp"
 
-            <!-- <RelativeLayout
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                    >
+                        android:background="@drawable/login_background"
 
-                 <de.hdodenhof.circleimageview.CircleImageView
-                         android:id="@+id/img_user"
-                         android:layout_width="@dimen/_90sdp"
-                         android:layout_height="@dimen/_90sdp"
-                         android:layout_centerHorizontal="true"
-                         android:layout_marginStart="8dp"
-                         android:background="@drawable/camera_background" />
-                 <ImageView
-                         android:id="@+id/img_add_profile"
-                         android:layout_width="30dp"
-                         android:layout_height="30dp"
-                         android:layout_alignParentEnd="true"
-                         android:src="@drawable/ic_camera"
-                         android:visibility="visible" />
-             </RelativeLayout>-->
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        tools:context=".User.RegisterActivity">
 
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_marginTop="@dimen/_30sdp"
+                                  android:orientation="vertical"
+                                  android:padding="20dp"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center_vertical">
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtfirstName"
+                                    android:maxLength="32"
+                                    android:hint="@string/first_name"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/ic_user"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtlastName"
+                                    android:maxLength="32"
+                                    android:hint="@string/last_name"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/ic_user"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtEmail"
+                                    android:inputType="textEmailAddress"
+                                    android:hint="@string/email"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/email"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="2dp"
+                                        android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_marginStart="8dp"
+                                      android:id="@+id/txtgender"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorPrimary"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                      android:text="@string/gender"/>
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_marginStart="2dp"
+                                      android:id="@+id/txtcolon"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorPrimary"
+                                      android:layout_toEndOf="@+id/txtgender"
+                                      android:text="@string/colon"/>
+                            <RadioGroup android:layout_width="match_parent"
+                                        android:layout_toEndOf="@id/txtcolon"
+                                        android:weightSum="1"
+                                        android:padding="2dp"
+                                        android:orientation="horizontal" android:layout_height="wrap_content">
+                                <RadioButton android:layout_width="20dp"
+                                             android:layout_marginStart="14dp"
+                                             android:padding="2dp"
+                                             android:layout_weight="0.5"
+                                             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                             android:text="@string/male"
+                                             android:gravity="center_vertical"
+                                             android:button="@drawable/gender_selection"
+                                             android:layout_height="20dp"/>
+                                <RadioButton android:layout_width="20dp"
+                                             android:layout_weight="0.5"
+                                             android:text="@string/female"
+                                             android:padding="2dp"
+                                             android:gravity="center_vertical"
+                                             android:button="@drawable/gender_selection"
+                                             android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                             android:layout_height="20dp"/>
+                            </RadioGroup>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content"
+                                      android:text="@string/select_country"
+                                      android:layout_marginStart="8dp"
+                                      android:textColor="@color/colorPrimary"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                      android:layout_height="wrap_content"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:padding="4dp"
+                                       android:src="@drawable/ic_down_arrow"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <!--  <RelativeLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                              <EditText
+                                      style="@style/Edittext"
+                                      android:id="@+id/edtAddress"
+                                      android:maxLength="30"
+                                      android:hint="@string/address"/>
+                              <ImageView android:layout_width="28dp"
+                                         android:layout_height="28dp"
+                                         android:src="@drawable/ic_address"
+                                         android:layout_margin="8dp"
+                                         android:layout_alignParentEnd="true"/>
+                          </RelativeLayout>
+                          <View style="@style/viewstyle"/>-->
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtMobileNo"
+                                    android:maxLength="15"
+                                    android:inputType="number"
+                                    android:hint="@string/mobile_no"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/ic_mobile"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtPassword"
+                                    android:maxLength="16"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/password"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/ic_password"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <EditText
+                                    style="@style/Edittext"
+                                    android:id="@+id/edtConfirmPassword"
+                                    android:maxLength="16"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/confirm_password"/>
+                            <ImageView android:layout_width="28dp"
+                                       android:layout_height="28dp"
+                                       android:src="@drawable/ic_password"
+                                       android:layout_margin="8dp"
+                                       android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+                        <View style="@style/viewstyle"/>
+                        <TextView
+                                android:id="@+id/register"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:text="@string/register"
+                                style="@style/buttonstyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout android:layout_width="match_parent"
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_90sdp"
+                        android:id="@+id/imguser"
+                        android:layout_height="@dimen/_90sdp"
+                        android:src="@drawable/camera_background"/>
+            </RelativeLayout>
+            <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_height="20dp"
+                    android:id="@+id/imgCamera"
+                    android:layout_marginTop="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+            />
 
-                          android:orientation="vertical"
-                          android:padding="20dp"
-                          android:layout_height="wrap_content"
-                          android:gravity="center_vertical">
+        </RelativeLayout>
 
-
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtfirstName"
-                            android:maxLength="32"
-                            android:hint="@string/first_name"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_user"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtlastName"
-                            android:maxLength="32"
-                            android:hint="@string/last_name"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_user"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtEmail"
-                            android:hint="@string/email"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/email"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:padding="2dp"
-                                android:layout_height="wrap_content">
-                    <TextView android:layout_width="wrap_content"
-                              android:layout_marginStart="8dp"
-                              android:id="@+id/txtgender"
-                              android:layout_height="wrap_content"
-                              android:textColor="@color/colorPrimary"
-                              android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                              android:text="@string/gender"/>
-                    <TextView android:layout_width="wrap_content"
-                              android:layout_marginStart="2dp"
-                              android:id="@+id/txtcolon"
-                              android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                              android:layout_height="wrap_content"
-                              android:textColor="@color/colorPrimary"
-                              android:layout_toEndOf="@+id/txtgender"
-                              android:text="@string/colon"/>
-                    <RadioGroup android:layout_width="match_parent"
-                                android:layout_toEndOf="@id/txtcolon"
-                                android:weightSum="1"
-                                android:padding="2dp"
-                                android:orientation="horizontal" android:layout_height="wrap_content">
-                        <RadioButton android:layout_width="20dp"
-                                     android:layout_marginStart="14dp"
-                                     android:padding="2dp"
-                                     android:layout_weight="0.5"
-                                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                     android:text="@string/male"
-                                     android:gravity="center_vertical"
-                                     android:button="@drawable/gender_selection"
-                                     android:layout_height="20dp"/>
-                        <RadioButton android:layout_width="20dp"
-                                     android:layout_weight="0.5"
-                                     android:text="@string/female"
-                                     android:padding="2dp"
-                                     android:gravity="center_vertical"
-                                     android:button="@drawable/gender_selection"
-                                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                     android:layout_height="20dp"/>
-                    </RadioGroup>
-                </RelativeLayout>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_marginTop="10dp"
-                                android:layout_height="wrap_content">
-                    <TextView android:layout_width="wrap_content"
-                              android:text="@string/select_country"
-                              android:layout_marginStart="8dp"
-                              android:textColor="@color/colorPrimary"
-                              android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                              android:layout_height="wrap_content"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:padding="4dp"
-                               android:src="@drawable/ic_down_arrow"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtAddress"
-                            android:maxLength="30"
-                            android:hint="@string/address"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_address"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtMobileNo"
-                            android:maxLength="15"
-                            android:hint="@string/mobile_no"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_mobile"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtPassword"
-                            android:maxLength="16"
-                            android:hint="@string/password"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_password"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <RelativeLayout android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                    <EditText
-                            style="@style/Edittext"
-                            android:id="@+id/edtConfirmPassword"
-                            android:maxLength="16"
-                            android:hint="@string/confirm_password"/>
-                    <ImageView android:layout_width="28dp"
-                               android:layout_height="28dp"
-                               android:src="@drawable/ic_password"
-                               android:layout_margin="8dp"
-                               android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View style="@style/viewstyle"/>
-                <TextView
-                        android:id="@+id/register"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:text="@string/register"
-                        style="@style/buttonstyle"/>
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
-</FrameLayout>
     </ScrollView>
 </layout>

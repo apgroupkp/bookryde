@@ -2,8 +2,10 @@ package com.example.win7.bookryde
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.ConnectivityManager
+import android.net.Uri
 import android.preference.PreferenceManager
 import android.support.v4.content.ContextCompat
 import android.util.Log
@@ -52,6 +54,17 @@ open class Utils {
         }
         fun checkPermission(mContext: Context, permission: String): Boolean {
             return ContextCompat.checkSelfPermission(mContext, permission) == PackageManager.PERMISSION_GRANTED
+        }
+        fun openMap(context: Context, latitude: Double, longitude: Double, Name: String) {
+            try {
+                val mUri = "geo:$latitude,$longitude?q=$latitude,$longitude($Name)"
+                //String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(mUri))
+                context.startActivity(intent)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
         }
     }
 

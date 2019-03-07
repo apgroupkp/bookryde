@@ -13,10 +13,30 @@
             <RelativeLayout android:layout_width="wrap_content"
                             android:padding="10dp"
                             android:layout_height="match_parent">
-                <ImageView android:layout_width="@dimen/_70sdp"
-                           android:layout_height="@dimen/_70sdp"
-                           android:id="@+id/imgHistoryUser"
-                           android:src="@drawable/user_image_drawer"/>
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:id="@+id/rel_id"
+                                android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                              android:id="@+id/txtBookingidlable"
+                              android:text="@string/booking_id"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/idcolon"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_toEndOf="@+id/txtBookingidlable"
+                            android:text="@string/colon"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_toEndOf="@+id/idcolon"
+                              android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                              android:id="@+id/txtBookingId"
+                              android:text="101400"/>
+                </RelativeLayout>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -24,16 +44,41 @@
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                         android:text="10 Feb 2019,2:15"
                         android:layout_alignParentEnd="true"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="28dp"
-                        android:layout_marginStart="4dp"
-                        android:id="@+id/txtRiderName"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                        android:text="Rider Name"
-                        android:layout_toEndOf="@+id/imgHistoryUser"
-                />
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/rel_pickup"
+                                android:layout_below="@+id/rel_id"
+                                android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:src="@drawable/pickup"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                               android:id="@+id/imgpicup"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_toEndOf="@+id/imgpicup"
+                              android:layout_marginStart="4dp"
+                              android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                              android:id="@+id/txtPickAdd"
+                              android:text="Acd"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/rel_pickup"
+                                android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:src="@drawable/drop"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                               android:id="@+id/imdrop"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_toEndOf="@+id/imdrop"
+                              android:layout_marginStart="4dp"
+                              android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                              android:id="@+id/txtDropAdd"
+                              android:text="Acd"/>
+                </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
